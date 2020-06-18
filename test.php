@@ -3,6 +3,8 @@
 require_once('Vogel.class.php');
 require_once('Vis.class.php');
 require_once('Freek.class.php');
+require_once('Struisvogel.class.php');
+require_once('Kraai.class.php');
 
 echo '<hr>';
 echo 'Vogel.class';
@@ -41,3 +43,31 @@ $freek->geefEten('Kat');
 $freek->brengNaarBed('Vis.class');
 $freek->brengNaarBed('vogel');
 $freek->brengNaarBed('Kat');
+
+echo '<br>';
+echo '<hr>';
+echo 'Struisvogel.class';
+echo '<hr>';
+
+$struisvogel = new Struisvogel();
+$struisvogel->eet();
+$struisvogel->eet();
+$struisvogel->slaap();
+$struisvogel->eet();
+$struisvogel->wakker();
+$struisvogel->praat();
+
+
+echo '<br>';
+echo '<hr>';
+echo 'Kraai.class';
+echo '<hr>';
+
+$struisvogel = new Kraai();
+$struisvogel->eet();
+$struisvogel->eet();
+$struisvogel->slaap();
+$struisvogel->eet();
+$struisvogel->wakker();
+$struisvogel->praat();
+$struisvogel->vlieg();
